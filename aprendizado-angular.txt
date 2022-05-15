@@ -1,0 +1,21 @@
+Para criar um service no angular:
+
+ng generate service NomeDoService
+-- ng g s NomeDoService
+
+O service incluirá chamadas http e deverá ser registrado no arquivo 'app.module.ts' dentro de providers.
+
+Para criar um componente no angular:
+
+ng generate component NomeDoComponente
+-- ng g c NomeDoComponente
+
+O componente incluirá os métodos, tratamento de dados e etc.
+Deverá ser registrado no arquivo 'app.module.ts' dentro de declarations.
+
+
+
+
+
+
+Quando criado um ser
