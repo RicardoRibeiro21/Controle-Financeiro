@@ -12,7 +12,7 @@ ng generate component NomeDoComponente
 
 O componente incluirá os métodos, tratamento de dados e etc.
 Deverá ser registrado no arquivo 'app.module.ts' dentro de declarations.
-
+Deverá ser registrado no arquivo 'app.routing.module.ts'.
 
 
 

@@ -70,7 +70,7 @@ namespace ControleFinanceiro.API
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseProxyToSpaDevelopmentServer($"http//localhost:4200/");
+                    spa.UseProxyToSpaDevelopmentServer($"http://localhost:4200/");
                 };
             });
 
