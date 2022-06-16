@@ -15,11 +15,13 @@ namespace ControleFinanceiro.DAL.Mapeamentos
             builder.HasKey(c => c.CartaoId);
 
             // Campos
-            builder.Property(c => c.Nome).HasMaxLength(50).IsRequired();
+            builder.Property(c => c.Nome).HasMaxLength(20).IsRequired();
+
             builder.Property(c => c.Bandeira).HasMaxLength(15).IsRequired();
 
             builder.Property(c => c.Numero).HasMaxLength(20).IsRequired();
             builder.HasIndex(c => c.Numero).IsUnique();
+
             builder.Property(c => c.Limite).IsRequired();
 
             // Relacionamentos
@@ -27,7 +29,7 @@ namespace ControleFinanceiro.DAL.Mapeamentos
             builder.HasMany(c => c.Despesas).WithOne(c => c.Cartao);
              
             // Alterando o nome da tabela na hora da criação
-            builder.ToTable("Categorias");
+            builder.ToTable("Cartoes");
         }
     }
 }

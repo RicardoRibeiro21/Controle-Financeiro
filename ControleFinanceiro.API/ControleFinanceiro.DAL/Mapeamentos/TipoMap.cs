@@ -24,7 +24,7 @@ namespace ControleFinanceiro.DAL.Mapeamentos
                 },
                 new Tipo
                 {
-                    TipoId = `2,
+                    TipoId = 2,
                     Nome = "Ganho"
                 }
                 );

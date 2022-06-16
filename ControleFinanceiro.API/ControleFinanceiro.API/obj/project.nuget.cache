@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ljCkbceOey6QfsZ+nynUmsUEeW4apW8HVEJ9b4qzx+OBhCbqm9yYmG1iXRPGx7DPnyMOoPKG0pAwe3uMe6OG4A==",
+  "dgSpecHash": "+VXAmkrSnTJ3x4rcfOXKXlNwTQ5+V+9TkF5PWQ8CD69tfugH50pAFsBddHmJ4FFkIEo5jFP3sWoQrlhQ/65wcg==",
   "success": true,
   "projectFilePath": "D:\\Ricardo\\Projetos\\ControleFinanceiro\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ribeiro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
@@ -19,6 +20,7 @@
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
+    "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.25\\microsoft.aspnetcore.jsonpatch.3.1.25.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.25\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.25.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\3.1.25\\microsoft.aspnetcore.nodeservices.3.1.25.nupkg.sha512",
@@ -31,6 +33,7 @@
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0\\microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
+    "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
     "C:\\Users\\Ribeiro\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
