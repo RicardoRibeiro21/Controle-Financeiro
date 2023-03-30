@@ -7,3 +7,13 @@ D:\Ricardo\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro
 D:\Ricardo\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
 D:\Ricardo\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb
 D:\Ricardo\Projetos\ControleFinanceiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.csprojAssemblyReference.cache
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.deps.json
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\bin\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.csproj.AssemblyReference.cache
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.AssemblyInfoInputs.cache
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.AssemblyInfo.cs
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
+C:\Users\ricar\OneDrive\Área de Trabalho\workspace-git\Controle-Financeiro\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb

@@ -15,34 +15,34 @@ namespace ControleFinanceiro.DAL.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
+                .HasAnnotation("ProductVersion", "3.1.21")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("ControleFinanceiro.BLL.Models.Cartao", b =>
                 {
                     b.Property<int>("CartaoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Bandeira")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("nvarchar(15)")
+                        .HasMaxLength(15);
 
                     b.Property<double>("Limite")
                         .HasColumnType("float");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<string>("Numero")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<string>("UsuarioId")
                         .IsRequired()
@@ -63,17 +63,17 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.Property<int>("CategoriaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Icone")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("nvarchar(15)")
+                        .HasMaxLength(15);
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<int>("TipoId")
                         .HasColumnType("int");
@@ -90,7 +90,7 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.Property<int>("DespesaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Ano")
                         .HasColumnType("int");
@@ -103,8 +103,8 @@ namespace ControleFinanceiro.DAL.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<int>("Dia")
                         .HasColumnType("int");
@@ -144,22 +144,22 @@ namespace ControleFinanceiro.DAL.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Name")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("NormalizedName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
+                        .HasName("RoleNameIndex")
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("Funcoes");
@@ -167,16 +167,16 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "3b8dab01-3aba-47e3-84a2-c0a8eff71427",
-                            ConcurrencyStamp = "bfe0efd2-8c58-4c34-ab4b-050988febea8",
+                            Id = "d80c2500-4cb5-491b-892f-03ae50238b35",
+                            ConcurrencyStamp = "0a01e5d6-fb7b-4793-ac2a-4ee6a5d66d07",
                             Descricao = "Administrador do Sistema",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "2ad34281-d4e2-4e05-bfc5-0e246bbe586d",
-                            ConcurrencyStamp = "da77ec36-3c7e-4f64-b57d-da9e73f9eeb8",
+                            Id = "f46d2240-ee4b-4ed4-a17a-c545814cf355",
+                            ConcurrencyStamp = "ac8e4531-c661-4649-9abb-7df75b72fd6b",
                             Descricao = "Usuário do Sistema",
                             Name = "Usuario",
                             NormalizedName = "USUARIO"
@@ -188,7 +188,7 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.Property<int>("GanhoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Ano")
                         .HasColumnType("int");
@@ -198,8 +198,8 @@ namespace ControleFinanceiro.DAL.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<int>("Dia")
                         .HasColumnType("int");
@@ -208,6 +208,7 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UsuarioId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("Valor")
@@ -229,12 +230,12 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.Property<int>("MesId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("MesId");
 
@@ -311,12 +312,12 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.Property<int>("TipoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.HasKey("TipoId");
 
@@ -350,12 +351,12 @@ namespace ControleFinanceiro.DAL.Migrations
 
                     b.Property<string>("Cpf")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
@@ -370,12 +371,12 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
@@ -388,8 +389,8 @@ namespace ControleFinanceiro.DAL.Migrations
 
                     b.Property<string>("Profissao")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
@@ -398,8 +399,8 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
 
                     b.HasKey("Id");
 
@@ -407,11 +408,11 @@ namespace ControleFinanceiro.DAL.Migrations
                         .IsUnique();
 
                     b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
+                        .HasName("EmailIndex");
 
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
+                        .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("Usuarios");
@@ -422,7 +423,7 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -446,7 +447,7 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -528,8 +529,6 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("ControleFinanceiro.BLL.Models.Categoria", b =>
@@ -539,8 +538,6 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasForeignKey("TipoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Tipo");
                 });
 
             modelBuilder.Entity("ControleFinanceiro.BLL.Models.Despesa", b =>
@@ -568,14 +565,6 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
-
-                    b.Navigation("Cartao");
-
-                    b.Navigation("Categoria");
-
-                    b.Navigation("Mes");
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("ControleFinanceiro.BLL.Models.Ganho", b =>
@@ -597,12 +586,6 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
-
-                    b.Navigation("Categoria");
-
-                    b.Navigation("Mes");
-
-                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -654,39 +637,6 @@ namespace ControleFinanceiro.DAL.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("ControleFinanceiro.BLL.Models.Cartao", b =>
-                {
-                    b.Navigation("Despesas");
-                });
-
-            modelBuilder.Entity("ControleFinanceiro.BLL.Models.Categoria", b =>
-                {
-                    b.Navigation("Despesas");
-
-                    b.Navigation("Ganhos");
-                });
-
-            modelBuilder.Entity("ControleFinanceiro.BLL.Models.Mes", b =>
-                {
-                    b.Navigation("Despesas");
-
-                    b.Navigation("Ganhos");
-                });
-
-            modelBuilder.Entity("ControleFinanceiro.BLL.Models.Tipo", b =>
-                {
-                    b.Navigation("Categorias");
-                });
-
-            modelBuilder.Entity("ControleFinanceiro.BLL.Models.Usuario", b =>
-                {
-                    b.Navigation("Cartoes");
-
-                    b.Navigation("Despesas");
-
-                    b.Navigation("Ganhos");
                 });
 #pragma warning restore 612, 618
         }

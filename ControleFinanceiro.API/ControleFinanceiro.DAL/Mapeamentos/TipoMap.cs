@@ -15,7 +15,7 @@ namespace ControleFinanceiro.DAL.Mapeamentos
             builder.Property(t => t.Nome).HasMaxLength(20).IsRequired();
 
             builder.HasMany(t => t.Categorias).WithOne(t => t.Tipo);
-
+            
             builder.HasData(
                 new Tipo
                 {
