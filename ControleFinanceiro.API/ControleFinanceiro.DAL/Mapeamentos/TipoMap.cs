@@ -20,7 +20,7 @@ namespace ControleFinanceiro.DAL.Mapeamentos
                 new Tipo
                 {
                     TipoId = 1,
-                    Nome = "Despesa"
+                    Nome = "Despesas"
                 },
                 new Tipo
                 {
