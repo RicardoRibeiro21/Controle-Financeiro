@@ -23,7 +23,7 @@ export class CategoriasService {
   
   PegarCategoriaId(catergoriaId: number): Observable<Categoria> {
     const apiUrl = `${this.url}/${catergoriaId}`;
-    return this.http.get<Categoria>(this.url);
+    return this.http.get<Categoria>(apiUrl);
   }
 
   NovaCategoria(categoria: Categoria) : Observable<any> {
@@ -32,11 +32,11 @@ export class CategoriasService {
 
   AtualizarCategoria(categoriaId: number, categoria: Categoria) : Observable<any> {
     const apiUrl = `${this.url}/${categoriaId}`;
-    return this.http.put<Categoria>(this.url, categoria, httpOptions);
+    return this.http.put<Categoria>(apiUrl, categoria, httpOptions);
   }
 
   ExcluirCategoria(categoriaId: number) : Observable<any> {
     const apiUrl = `${this.url}/${categoriaId}`;
-    return this.http.delete<number>(this.url, httpOptions)
+    return this.http.delete<number>(apiUrl)
   }
 }

@@ -26,12 +26,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { AtualizarCategoriaComponent } from './components/categoria/atualizar-categoria/atualizar-categoria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListagemCategoriasComponent,
-    NovaCategoriaComponent
+    NovaCategoriaComponent,
+    AtualizarCategoriaComponent
   ],
   imports: [
     HttpClientModule,
@@ -46,6 +49,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatInputModule,
     MatDividerModule,
     MatSelectModule,
+    MatGridListModule,
     ReactiveFormsModule
   ],
   providers: [
