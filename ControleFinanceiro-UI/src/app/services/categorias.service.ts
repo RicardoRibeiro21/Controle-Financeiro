@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class CategoriasService {
-  url: string = 'api/Categorias';
+  url: string = 'https://localhost:5001/api/Categorias';
 
   constructor(private http: HttpClient) { }
 
